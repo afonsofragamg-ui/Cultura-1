@@ -16,6 +16,5 @@ switch ($url)
 
     case '/boleto/Lista';
      echo "listar Boleto";
-    break
+    break;
 }
-echo $url;
