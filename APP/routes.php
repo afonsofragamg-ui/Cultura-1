@@ -10,6 +10,12 @@ switch ($url)
         echo "página inicial";
     break;
 
-    case '/'
+    case '/boleto/cadastro';
+     echo "cadastra Boleto";
+    break;
+
+    case '/boleto/Lista';
+     echo "listar Boleto";
+    break
 }
 echo $url;
