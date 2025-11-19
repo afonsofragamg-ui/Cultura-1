@@ -3,8 +3,14 @@
  * Declaração de namespaces com sub-namespaces:
  * https://www.php.net/manual/pt_BR/language.namespaces.nested.php
  */
-namespace CULTURA\APP\Controller;
+namespace Cultura\APP\Controller;
+use Cultura\APP\Model;
+use Cultura\APP\Model\Boleto;
 
+/**
+ * Declaração de membros de classes estaticos
+ * https://www.php.net/manual/pt_BR/language.oop5.static.php
+ */
 class BoletoController
 {
     public static function cadastro()
@@ -12,9 +18,11 @@ class BoletoController
         echo "cadastrar aluno";
     }
 
-    public static function lista()
+    public static function listar()
     {
         echo "listar aluno";
+        $boleto = new Boleto;
+        $boleto->getallrow();
     }
 }
 ?>

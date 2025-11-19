@@ -1,6 +1,6 @@
 <?php
 
-namespace CULTURA\APP\Model;
+namespace Cultura\APP\Model;
 
 class Boleto{
 
