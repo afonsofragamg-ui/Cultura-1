@@ -1,6 +1,9 @@
 <?php 
-
-namespace Cultura\APP\Controller;
+/**
+ * Declaração de namespaces com sub-namespaces:
+ * https://www.php.net/manual/pt_BR/language.namespaces.nested.php
+ */
+namespace CULTURA\APP\Controller;
 
 class BoletoController
 {

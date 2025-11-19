@@ -1,30 +1,40 @@
 <?php
 
-use Cultura\APP\Controller\BoletoController;
+namespace CULTURA\APP\Model;
 
-class boletos{
+class Boleto{
 
-    public $idboleto, $numeroboleto, $idcontrato, $pagador, $vendimento, $datapagamento, $valor, $textovalor, 
-    $recebedor, $observaçoes, $qrcod, $idsituacaoboleto, $codigodebarra;
+    public $idboleto;
+    public $numeroboleto;
+    public $idcontrato;
+    public $pagador;
+    public $vendimento;
+    public $datapagamento;
+    public $valor;
+    public $textovalor;
+    public $recebedor;
+    public $observacoes;
+    public $qrcod;
+    public $idsituacaoboleto;
+    public $codigodebarra;
      
-    function save() : boletos
+    public function save() : Boleto
     {
-        return new boletos ();
+        return new Boleto();
     }
 
-    function getByid (int $idboleto) : ?boletos
+    public function getByid (int $idboleto) : ?Boleto
     {
-
-        return new boletos ();
+        return new Boleto ();
     }
 
-    function getallrow ()
+    public function getallrow () : array
     {
-
+        return [];
     }
 
-    function delete(int $idboleto)
+    public function delete (int $idboleto) : bool
     {
-
+        return false;
     }
 }
