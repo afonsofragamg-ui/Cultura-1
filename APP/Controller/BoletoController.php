@@ -21,7 +21,7 @@ class BoletoController
     public static function listar()
     {
         echo "listar aluno";
-        $boleto = new Boleto;
+        $boleto = new BoletoController;
         $boleto->getallrow();
     }
 }
