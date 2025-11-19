@@ -1,5 +1,4 @@
-<?php 
-class clienteDao{
+<?php
+class CienteDao{
 
 }
-?>

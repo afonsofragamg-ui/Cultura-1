@@ -1,6 +1,6 @@
 <?php 
 
-class situacaoModel{
+class SituacaoModel{
 
 }
 ?>

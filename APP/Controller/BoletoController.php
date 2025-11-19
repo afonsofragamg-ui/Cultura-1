@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Declaração de namespaces com sub-namespaces:
  * https://www.php.net/manual/pt_BR/language.namespaces.nested.php
@@ -25,4 +25,3 @@ class BoletoController
         $boleto->getallrow();
     }
 }
-?>

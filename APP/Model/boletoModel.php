@@ -2,7 +2,7 @@
 
 namespace Cultura\APP\Model;
 
-class Boleto{
+class BoletoModel{
 
     public $idboleto;
     public $numeroboleto;
@@ -18,14 +18,14 @@ class Boleto{
     public $idsituacaoboleto;
     public $codigodebarra;
      
-    public function save() : Boleto
+    public function save() : BoletoModel
     {
-        return new Boleto();
+        return new BoletoModel();
     }
 
-    public function getByid (int $idboleto) : ?Boleto
+    public function getByid (int $idboleto) : ?BoletoModel
     {
-        return new Boleto ();
+        return new BoletoModel ();
     }
 
     public function getallrow () : array

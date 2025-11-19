@@ -1,6 +1,5 @@
-<?php 
+<?php
 
-class operadorController{
+class OperadorController{
 
 }
-?>

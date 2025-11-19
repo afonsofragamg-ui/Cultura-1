@@ -1,8 +1,7 @@
-<?php 
+<?php
 
-class formaPagamentoModel{
+class FormaPagamentoModel{
 
 
 }
 
-?>

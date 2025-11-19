@@ -1,5 +1,4 @@
-<?php 
-class clienteController{
+<?php
+class ClienteController{
 
 }
-?>

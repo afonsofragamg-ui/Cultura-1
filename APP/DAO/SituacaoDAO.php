@@ -1,6 +1,5 @@
-<?php 
+<?php
 
-class situacaoDao{
+class SituacaoDao{
 
 }
-?>

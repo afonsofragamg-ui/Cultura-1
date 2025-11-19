@@ -1,8 +1,7 @@
-<?php 
+<?php
 
-class mensalidadeDao{
+class MensalidadeDao
+{
 
 
 }
-
-?>

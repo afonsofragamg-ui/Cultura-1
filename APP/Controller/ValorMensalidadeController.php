@@ -1,6 +1,5 @@
-<?php 
+<?php
 
-class valorMensalidadeController{
+class ValorMensalidadeController{
 
 }
-?>

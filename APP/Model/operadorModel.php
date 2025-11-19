@@ -1,6 +1,5 @@
-<?php 
+<?php
 
-class operadorModel{
+class OperadorModel{
 
 }
-?>

@@ -1,8 +1,6 @@
-<?php 
+<?php
 
-class formaPagamentoController{
+class FormaPagamentoController{
 
 
 }
-
-?>

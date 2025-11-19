@@ -1,6 +1,5 @@
-<?php 
+<?php
 
-class usuarioController{
+class UsuarioController{
 
 }
-?>

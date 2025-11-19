@@ -1,6 +1,5 @@
-<?php 
+<?php
 
-class precadastroDao{
+class PreCadastroDao{
 
 }
-?>

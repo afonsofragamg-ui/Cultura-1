@@ -1,6 +1,6 @@
 <?php 
 
-class usuarioModel{
+class UsuarioModel{
 
 }
 ?>

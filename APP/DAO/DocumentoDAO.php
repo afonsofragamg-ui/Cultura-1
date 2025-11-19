@@ -1,8 +1,6 @@
-<?php 
+<?php
 
-class documentoDao {
+class DocumentoDao {
 
 
 }
-
-?>
