@@ -5,7 +5,6 @@
  */
 namespace Cultura\APP\Controller;
 use Cultura\APP\Model;
-use Cultura\APP\Model\Boleto;
 
 /**
  * Declaração de membros de classes estaticos
@@ -22,6 +21,6 @@ class BoletoController
     {
         echo "listar aluno";
         $boleto = new BoletoController;
-        $boleto->getallrow();
+        $boleto->();
     }
 }
