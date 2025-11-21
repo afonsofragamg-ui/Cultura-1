@@ -2,7 +2,7 @@
 namespace Cultura\APP\Model;
 class NivelAcessoModel{
     private $id;
-    private $nivel
+    private $nivel;
 
     public function save() : NivelAcessoModel
     {
@@ -26,4 +26,4 @@ class NivelAcessoModel{
 
 
 }
-}
+
