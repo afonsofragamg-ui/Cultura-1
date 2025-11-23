@@ -1,18 +1,18 @@
 <?php
 
 namespace Cultura\APP\Model;
-class PreCadastroModel{
+class Usuario{
     private $id;
     private $nivel;
 
-    public function save() : PreCadastroModel
+    public function save() : Usuario
     {
-        return new PreCadastroModel();
+        return new Usuario();
     }
 
-    public function getByid (int $id) : ?PreCadastroModel
+    public function getByid (int $id) : ?Usuario
     {
-        return new PreCadastroModel ();
+        return new Usuario ();
     }
 
     public function getallrow () : array

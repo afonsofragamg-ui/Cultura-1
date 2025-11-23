@@ -1,18 +1,18 @@
 <?php
-
 namespace Cultura\APP\Model;
-class UsuarioModel{
-    private $id;
-    private $nivel;
+class FormaPagamento{
 
-    public function save() : UsuarioModel
+    private $id;
+    private $tipo;
+
+    public function save() : FormaPagamento
     {
-        return new UsuarioModel();
+        return new FormaPagamento();
     }
 
-    public function getByid (int $id) : ?UsuarioModel
+    public function getByid (int $id) : ?FormaPagamento
     {
-        return new UsuarioModel ();
+        return new FormaPagamento ();
     }
 
     public function getallrow () : array
@@ -24,4 +24,6 @@ class UsuarioModel{
     {
         return false;
     }
+
 }
+

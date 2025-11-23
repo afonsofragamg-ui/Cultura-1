@@ -1,7 +1,7 @@
 <?php
 
 namespace Cultura\APP\Model;
-class ClienteModel{
+class Cliente{
     public $id;
     public $nome;
     public $cfpf;
@@ -24,14 +24,14 @@ class ClienteModel{
     public $idnivelacesso;
 
 
-    public function save() : ClienteModel
+    public function save() : Cliente
     {
-        return new ClienteModel();
+        return new Cliente();
     }
 
-    public function getByid (int $id) : ?ClienteModel
+    public function getByid (int $id) : ?Cliente
     {
-        return new ClienteModel ();
+        return new Cliente ();
     }
 
     public function getallrow () : array

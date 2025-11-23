@@ -1,18 +1,18 @@
 <?php
 
 namespace Cultura\APP\Model;
-class ValorMensalidadeModel{
+class PreCadastro{
     private $id;
     private $nivel;
 
-    public function save() : ValorMensalidadeModel
+    public function save() : PreCadastro
     {
-        return new ValorMensalidadeModel();
+        return new PreCadastro();
     }
 
-    public function getByid (int $id) : ?ValorMensalidadeModel
+    public function getByid (int $id) : ?PreCadastro
     {
-        return new ValorMensalidadeModel ();
+        return new PreCadastro ();
     }
 
     public function getallrow () : array

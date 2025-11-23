@@ -2,9 +2,9 @@
 
 namespace Cultura\APP\Model;
 
-class BoletoModel{
+class Boleto{
 
-    public $idboleto;
+    public $id;
     public $numeroboleto;
     public $idcontrato;
     public $pagador;
@@ -18,22 +18,22 @@ class BoletoModel{
     public $idsituacaoboleto;
     public $codigodebarra;
      
-    public function save() : BoletoModel
+    public function save() : Boleto
     {
-        return new BoletoModel();
+        return new Boleto();
     }
 
-    public function getByid (int $idboleto) : ?BoletoModel
+    public function getByid (int $id) : ?Boleto
     {
-        return new BoletoModel ();
+        return new Boleto ();
     }
 
-    public function getallrow () : array
+    public function getAllRows () : array
     {
         return [];
     }
 
-    public function delete (int $idboleto) : bool
+    public function delete (int $id) : bool
     {
         return false;
     }

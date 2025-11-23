@@ -1,6 +1,6 @@
 <?php
 namespace Cultura\APP\Model;
-class MensalidadeModel{
+class Mensalidade{
 
     private $id;
     private $codigo;
@@ -12,14 +12,14 @@ class MensalidadeModel{
     private $valorpago;
     private $status;
 
-    public function save() : MensalidadeModel
+    public function save() : Mensalidade
     {
-        return new MensalidadeModel();
+        return new Mensalidade();
     }
 
-    public function getByid (int $id) : ?MensalidadeModel
+    public function getByid (int $id) : ?Mensalidade
     {
-        return new MensalidadeModel ();
+        return new Mensalidade ();
     }
 
     public function getallrow () : array

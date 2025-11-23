@@ -1,6 +1,6 @@
 <?php
 namespace Cultura\APP\Model;
-class DocumentoModel {
+class Documento {
     private $id;
     private $idCliente;
     private $imagcpf;
@@ -15,14 +15,14 @@ class DocumentoModel {
     private $imgcomprovanteresidencial2anos;
 
 
-    public function save() : DocumentoModel
+    public function save() : Documento
     {
-        return new DocumentoModel();
+        return new Documento();
     }
 
-    public function getByid (int $id) : ?DocumentoModel
+    public function getByid (int $id) : ?Documento
     {
-        return new DocumentoModel ();
+        return new Documento ();
     }
 
     public function getallrow () : array

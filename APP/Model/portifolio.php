@@ -1,18 +1,18 @@
 <?php
 
 namespace Cultura\APP\Model;
-class OperadorModel{
+class Portifolio{
     private $id;
     private $nivel;
 
-    public function save() : OperadorModel
+    public function save() : Portifolio
     {
-        return new OperadorModel();
+        return new Portifolio();
     }
 
-    public function getByid (int $id) : ?OperadorModel
+    public function getByid (int $id) : ?Portifolio
     {
-        return new OperadorModel ();
+        return new Portifolio ();
     }
 
     public function getallrow () : array
@@ -24,6 +24,5 @@ class OperadorModel{
     {
         return false;
     }
-
 
 }

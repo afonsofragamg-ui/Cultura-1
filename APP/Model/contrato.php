@@ -1,6 +1,6 @@
 <?php
 namespace Cultura\APP\Model;
-class ContratoModel{
+class Contrato{
     public $id;
     public $codigocliente;
     public $modadlidade;
@@ -8,14 +8,14 @@ class ContratoModel{
     public $datatermino;
     public $datavencimento;
 
-    public function save() : ContratoModel
+    public function save() : Contrato
     {
-        return new ContratoModel();
+        return new Contrato();
     }
 
-    public function getByid (int $id) : ?ContratoModel
+    public function getByid (int $id) : ?Contrato
     {
-        return new ContratoModel ();
+        return new Contrato ();
     }
 
     public function getallrow () : array

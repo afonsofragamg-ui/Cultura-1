@@ -1,18 +1,18 @@
 <?php
 
 namespace Cultura\APP\Model;
-class SituacaoModel{
+class Situacao{
     private $id;
     private $nivel;
 
-    public function save() : SituacaoModel
+    public function save() : Situacao
     {
-        return new SituacaoModel();
+        return new Situacao();
     }
 
-    public function getByid (int $id) : ?SituacaoModel
+    public function getByid (int $id) : ?Situacao
     {
-        return new SituacaoModel ();
+        return new Situacao ();
     }
 
     public function getallrow () : array

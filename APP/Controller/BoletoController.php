@@ -4,7 +4,7 @@
  * https://www.php.net/manual/pt_BR/language.namespaces.nested.php
  */
 namespace Cultura\APP\Controller;
-use Cultura\APP\Model;
+use Cultura\APP\Model\Boleto;
 
 /**
  * Declaração de membros de classes estaticos
@@ -19,8 +19,7 @@ class BoletoController
 
     public static function listar()
     {
-        echo "listar aluno";
-        $boleto = new BoletoController;
-        $boleto->();
+        $boleto = new Boleto();
+        $boleto->getAllRows();
     }
 }

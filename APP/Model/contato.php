@@ -1,6 +1,6 @@
 <?php
 namespace Cultura\APP\Model;
-class ContatoModel{
+class Contato{
     public $id;
     public $nome;
     public $amail;
@@ -8,14 +8,14 @@ class ContatoModel{
     public $dataenvio;
     public $horaenvio;
 
-    public function save() : ContatoModel
+    public function save() : Contato
     {
-        return new ContatoModel();
+        return new Contato();
     }
 
-    public function getByid (int $id) : ?ContatoModel
+    public function getByid (int $id) : ?Contato
     {
-        return new ContatoModel ();
+        return new Contato ();
     }
 
     public function getallrow () : array

@@ -1,17 +1,17 @@
 <?php
 namespace Cultura\APP\Model;
-class NivelAcessoModel{
+class NivelAcesso{
     private $id;
     private $nivel;
 
-    public function save() : NivelAcessoModel
+    public function save() : NivelAcesso
     {
-        return new NivelAcessoModel();
+        return new NivelAcesso();
     }
 
-    public function getByid (int $id) : ?NivelAcessoModel
+    public function getByid (int $id) : ?NivelAcesso
     {
-        return new NivelAcessoModel ();
+        return new NivelAcesso ();
     }
 
     public function getallrow () : array

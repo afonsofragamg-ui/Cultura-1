@@ -1,18 +1,17 @@
 <?php
-
 namespace Cultura\APP\Model;
-class PortifolioModel{
+class Modalidade{
     private $id;
-    private $nivel;
+    private $modalidade;
 
-    public function save() : PortifolioModel
+    public function save() : Modalidade
     {
-        return new PortifolioModel();
+        return new Modalidade();
     }
 
-    public function getByid (int $id) : ?PortifolioModel
+    public function getByid (int $id) : ?Modalidade
     {
-        return new PortifolioModel ();
+        return new Modalidade ();
     }
 
     public function getallrow () : array
@@ -25,4 +24,6 @@ class PortifolioModel{
         return false;
     }
 
+
 }
+

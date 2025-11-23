@@ -1,17 +1,18 @@
 <?php
-namespace Cultura\APP\Model;
-class ModalidadeModel{
-    private $id;
-    private $modalidade;
 
-    public function save() : ModalidadeModel
+namespace Cultura\APP\Model;
+class ValorMensalidade{
+    private $id;
+    private $nivel;
+
+    public function save() : ValorMensalidade
     {
-        return new ModalidadeModel();
+        return new ValorMensalidade();
     }
 
-    public function getByid (int $id) : ?ModalidadeModel
+    public function getByid (int $id) : ?ValorMensalidade
     {
-        return new ModalidadeModel ();
+        return new ValorMensalidade ();
     }
 
     public function getallrow () : array
@@ -23,7 +24,4 @@ class ModalidadeModel{
     {
         return false;
     }
-
-
 }
-
