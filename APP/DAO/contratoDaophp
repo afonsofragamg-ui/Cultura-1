@@ -1,5 +1,40 @@
 <?php
 
-class ContratoDao{
+namespace Cultura\APP\DAO;
+
+use Cultura\APP\Model\Contrato;
+class ContratoDAO{
+
+    public function save (Contrato $model) : Contrato
+    {
+        return ($model->id == null) ? $this-> insert($model) : $this->update($model);
+    }
+
+    public function insert (Contrato $mode) :Contrato
+    {
+        return new Contrato();
+    }
+
+    public function update (Contrato $model) :Contrato
+    {
+        return new Contrato();
+    }
+
+    public function selectById (int $id) :?Contrato
+    {
+         return new Contrato();
+    }
+
+        public function select () : array
+    {
+        return [];
+    }
+
+        public function delete (int $id) : bool
+    {
+        return false;
+    }
+
+
 
 }
