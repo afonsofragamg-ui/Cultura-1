@@ -10,7 +10,7 @@ class FormaPagamentoDAO{
         return ($model->id == null) ? $this-> insert($model) : $this->update($model);
     }
 
-    public function insert (FormaPagamento $mode) :FormaPagamento 
+    public function insert (FormaPagamento $model) :FormaPagamento 
     {
         return new FormaPagamento ();
     }

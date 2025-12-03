@@ -15,7 +15,7 @@ class Contrato{
 
     public function getByid (int $id) : ?Contrato
     {
-        return new Contrato ();
+        return new Contrato ($id);
     }
 
     public function getallrow () : array

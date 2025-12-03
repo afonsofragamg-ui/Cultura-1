@@ -10,7 +10,7 @@ class ClienteDAO{
         return ($model->id == null) ? $this-> insert($model) : $this->update($model);
     }
 
-    public function insert (Cliente $mode) :Cliente
+    public function insert (Cliente $model) :Cliente
     {
         return new Cliente();
     }

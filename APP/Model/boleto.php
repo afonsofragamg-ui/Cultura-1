@@ -1,6 +1,7 @@
 <?php
 
 namespace Cultura\APP\Model;
+use Cultura\APP\DAO\BoletoDao;
 
 class Boleto{
 
@@ -20,17 +21,18 @@ class Boleto{
      
     public function save() : Boleto
     {
-        return new Boleto();
+        return (new Boleto())->save($this);
     }
 
     public function getByid (int $id) : ?Boleto
     {
-        return new Boleto ();
+        return (new Boleto())->selectById($id);
     }
+    
 
     public function getAllRows () : array
     {
-        return [];
+        return (new Boleto())->select();
     }
 
     public function delete (int $id) : bool

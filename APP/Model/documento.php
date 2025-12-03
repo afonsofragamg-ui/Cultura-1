@@ -20,7 +20,7 @@ class Documento {
         return new Documento();
     }
 
-    public function getByid (int $id) : ?Documento
+    public function getByid (int $id) : ? Documento
     {
         return new Documento ();
     }

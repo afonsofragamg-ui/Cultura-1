@@ -10,7 +10,7 @@ class ContratoDAO{
         return ($model->id == null) ? $this-> insert($model) : $this->update($model);
     }
 
-    public function insert (Contrato $mode) :Contrato
+    public function insert (Contrato $model) :Contrato
     {
         return new Contrato();
     }

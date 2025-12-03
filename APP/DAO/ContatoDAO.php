@@ -10,7 +10,7 @@ class ContatoDAO{
         return ($model->id == null) ? $this-> insert($model) : $this->update($model);
     }
 
-    public function insert (Contato $mode) :Contato
+    public function insert (Contato $model) :Contato
     {
         return new Contato();
     }
