@@ -5,10 +5,11 @@ spl_autoload_register (function ($nome_da_classe)
 {
  $arquivo = BASE_DIR . "/" . $nome_da_classe . ".php";
 
- if (file_exists($arquivo)) {
+ if (file_exists($arquivo)){
     include_once $arquivo;
  } else {
-    throw new Exception("arquivo não existe");
+    throw new Exception {
+      ("arquivo não existe");
+    }      
  }
-
 });
