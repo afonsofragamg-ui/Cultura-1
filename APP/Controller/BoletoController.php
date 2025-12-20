@@ -14,7 +14,7 @@ class BoletoController
 {
     public static function cadastro()
     {
-        echo "cadastrar aluno";
+        echo "cadastrar novo boleto";
     }
 
     public static function listar()
