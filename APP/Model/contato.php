@@ -1,5 +1,6 @@
 <?php
 namespace Cultura\APP\Model;
+use Cultura\APP\DAO\ContatoDAO;
 class Contato{
     public $id;
     public $nome;

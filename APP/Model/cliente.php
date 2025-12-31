@@ -1,28 +1,22 @@
 <?php
 
 namespace Cultura\APP\Model;
+use Cultura\APP\DAO\ClienteDAO;
 class Cliente{
-    public $id;
+    public $idclientes;
     public $nome;
-    public $cfpf;
+    public $cpf;
     public $email;
     public $telefone;
-    public $cep;
-    public $logradouro;
-    public $numero;
-    public $complemento;
-    public $bairro;
-    public $municipio;
-    public $uf;
-    public $idmodalidade;
     public $rg;
-    public $facebook;
-    public $instagran;
-    public $twitter;
     public $datacadastro;
-    public $idsituacao;
-    public $idnivelacesso;
-
+    public $id_endereco;
+    public $id_redessociais;
+    public $id_portifolio;
+    public $id_situacao;
+    public $id_nivelacesso;
+    public $id_documentos;
+    public $id_contratos;
 
     public function save() : Cliente
     {

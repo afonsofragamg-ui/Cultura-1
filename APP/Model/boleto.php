@@ -5,7 +5,7 @@ use Cultura\APP\DAO\BoletoDao;
 
 class Boleto{
 
-    public $id;
+    public $idboletos;
     public $numeroboleto;
     public $idcontrato;
     public $pagador;
@@ -16,9 +16,11 @@ class Boleto{
     public $recebedor;
     public $observacoes;
     public $qrcod;
-    public $idsituacaoboleto;
     public $codigodebarra;
-     
+    public $id_situacaoboleto;
+    public $id_fomaspagamento;
+    public $id_contato;
+   
     public function save() : Boleto
     {
         return (new Boleto())->save($this);

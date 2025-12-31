@@ -1,8 +1,11 @@
 <?php
 namespace Cultura\APP\Model;
+use Cultura\APP\DAO\;
+
 class Modalidade{
     private $id;
     private $modalidade;
+    private $valor;
 
     public function save() : Modalidade
     {

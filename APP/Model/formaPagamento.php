@@ -1,5 +1,6 @@
 <?php
 namespace Cultura\APP\Model;
+use Cultura\APP\DAO\FormaPagamentoDAO;
 class FormaPagamento{
 
     private $id;

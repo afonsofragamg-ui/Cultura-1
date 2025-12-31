@@ -1,12 +1,12 @@
 <?php
 namespace Cultura\APP\Model;
+use Cultura\APP\DAO\ContratoDAO;
 class Contrato{
-    public $id;
-    public $codigocliente;
-    public $modadlidade;
+    public $idcontrato;
     public $datainicio;
     public $datatermino;
-    public $datavencimento;
+    public $diavencimento;
+    public $id_modadlidade;
 
     public function save() : Contrato
     {
@@ -27,8 +27,5 @@ class Contrato{
     {
         return false;
     }
-
-    
-
 
 }

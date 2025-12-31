@@ -1,5 +1,7 @@
 <?php
 namespace Cultura\APP\Model;
+use Cultura\APP\DAO\DocumentoDAO;
+
 class Documento {
     private $id;
     private $idCliente;
