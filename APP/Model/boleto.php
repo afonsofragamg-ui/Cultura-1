@@ -34,7 +34,8 @@ class Boleto{
 
     public function getAllRows () : array
     {
-        return (new Boleto())->select();
+        return (new Boleto())->select
+        ();
     }
 
     public function delete (int $id) : bool
