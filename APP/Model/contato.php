@@ -2,7 +2,7 @@
 namespace Cultura\APP\Model;
 use Cultura\APP\DAO\ContatoDAO;
 class Contato{
-    public $id;
+    public $idcontato;
     public $nome;
     public $amail;
     public $mensagem;
@@ -14,7 +14,7 @@ class Contato{
         return new Contato();
     }
 
-    public function getByid (int $id) : ?Contato
+    public function getByid (int $idcontato) : ?Contato
     {
         return new Contato ();
     }
@@ -24,7 +24,7 @@ class Contato{
         return [];
     }
 
-    public function delete (int $id) : bool
+    public function delete (int $idcontato) : bool
     {
         return false;
     }

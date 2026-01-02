@@ -3,7 +3,7 @@ namespace Cultura\APP\Model;
 use Cultura\APP\DAO\DocumentoDAO;
 
 class Documento {
-    private $id;
+    private $iddocumento;
     private $idCliente;
     private $imagcpf;
     private $imgrg;
@@ -22,7 +22,7 @@ class Documento {
         return new Documento();
     }
 
-    public function getByid (int $id) : ? Documento
+    public function getByid (int $iddocumento) : ? Documento
     {
         return new Documento ();
     }
@@ -32,7 +32,7 @@ class Documento {
         return [];
     }
 
-    public function delete (int $id) : bool
+    public function delete (int $iddocumento) : bool
     {
         return false;
     }

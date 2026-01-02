@@ -26,19 +26,18 @@ class Boleto{
         return (new Boleto())->save($this);
     }
 
-    public function getByid (int $id) : ?Boleto
+    public function getByid (int $idboletos) : ?Boleto
     {
-        return (new Boleto())->selectById($id);
+        return (new Boleto());
     }
     
 
     public function getAllRows () : array
     {
-        return (new Boleto())->select
-        ();
+        return [];
     }
 
-    public function delete (int $id) : bool
+    public function delete (int $idboletos) : bool
     {
         return false;
     }

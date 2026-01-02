@@ -23,7 +23,7 @@ class Cliente{
         return new Cliente();
     }
 
-    public function getByid (int $id) : ?Cliente
+    public function getByid (int $idclientes) : ?Cliente
     {
         return new Cliente ();
     }
@@ -33,7 +33,7 @@ class Cliente{
         return [];
     }
 
-    public function delete (int $id) : bool
+    public function delete (int $idclientes) : bool
     {
         return false;
     }

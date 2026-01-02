@@ -13,9 +13,9 @@ class Contrato{
         return new Contrato();
     }
 
-    public function getByid (int $id) : ?Contrato
+    public function getByid (int $idcontrato) : ?Contrato
     {
-        return new Contrato ($id);
+        return new Contrato ();
     }
 
     public function getallrow () : array
@@ -23,7 +23,7 @@ class Contrato{
         return [];
     }
 
-    public function delete (int $id) : bool
+    public function delete (int $idcontrato) : bool
     {
         return false;
     }
