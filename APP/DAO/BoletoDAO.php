@@ -28,9 +28,11 @@ class BoletoDao extends DAO
                                     recebedor,
                                     observacoes,
                                     qrcod,
-                                    idsituacaoboleto,
-                                    codigodebarra)
-                                    values (?,?,?,?,?,?,?,?,?,?,?,?)";
+                                    codigodebarra,
+                                    id_situacaoboleto,
+                                    id_formadepagamento,
+                                    id_contrato),
+                                    values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         $stmt = parent :: $conexao ->prepare($sql);
         $stmt->bindValue(1,$model->numeroboleto);
         $stmt->bindValue(2,$model->idcontrato);
@@ -41,9 +43,11 @@ class BoletoDao extends DAO
         $stmt->bindValue(7,$model->textovalor);
         $stmt->bindValue(8,$model->recebedor);
         $stmt->bindValue(9,$model->observacoes);
-        $stmt->bindValue(10,$model->qrcod);
-        $stmt->bindValue(11,$model->idsituacaoboleto);
+        $stmt->bindValue(10,$model->qrcod); 
         $stmt->bindValue(12,$model->codigodebarra);
+        $stmt->bindValue(11,$model->id_situacaoboleto);
+        $stmt->bindValue(11,$model->id_formadepagamento);
+        $stmt->bindValue(11,$model->id_contrato);
         $stmt->execute();
 
         $model->id = parent::$conexao->lastInsertId();
