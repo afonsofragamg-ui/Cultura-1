@@ -3,6 +3,7 @@
 namespace Cultura\APP\Model;
 use Cultura\APP\DAO\ClienteDAO;
 class Cliente{
+    
     public $idclientes;
     public $nome;
     public $cpf;

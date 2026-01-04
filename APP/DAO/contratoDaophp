@@ -3,15 +3,35 @@
 namespace Cultura\APP\DAO;
 
 use Cultura\APP\Model\Contrato;
-class ContratoDAO{
+
+class ContratoDAO extends DAO{
+
+     public function __construct()
+    {
+        parent::__construct();
+    }
 
     public function save (Contrato $model) : Contrato
     {
-        return ($model->id == null) ? $this-> insert($model) : $this->update($model);
+        return ($model->idcontrato == null) ? $this-> insert($model) : $this->update($model);
     }
 
     public function insert (Contrato $model) :Contrato
     {
+         $sql = "INSERT INTO contrato (
+                                datainicio,
+                                datatermino,
+                                diavencimento,
+                                id_modalidade),                                 
+                                values (?,?,?,?)";
+                                
+        $stmt = parent :: $conexao ->prepare($sql);
+        $stmt->bindValue(1,$model->datainicio);
+        $stmt->bindValue(3,$model->datatermino);
+        $stmt->bindValue(4,$model->diavencimento);
+        $stmt->bindValue(5,$model->id_modadlidade);
+        $stmt->execute();
+
         return new Contrato();
     }
 

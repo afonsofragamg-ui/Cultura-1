@@ -4,7 +4,7 @@ use Cultura\APP\DAO\ContatoDAO;
 class Contato{
     public $idcontato;
     public $nome;
-    public $amail;
+    public $email;
     public $mensagem;
     public $dataenvio;
     public $horaenvio;

@@ -12,7 +12,7 @@ class BoletoDao extends DAO
 
     public function save (Boleto $model) : Boleto
     {
-        return ($model->id == null) ? $this-> insert($model) : $this->update($model);
+        return ($model->idboletos == null) ? $this-> insert($model) : $this->update($model);
     }
 
     public function insert (Boleto $model) :Boleto
@@ -30,9 +30,10 @@ class BoletoDao extends DAO
                                     qrcod,
                                     codigodebarra,
                                     id_situacaoboleto,
-                                    id_formadepagamento,
-                                    id_contrato),
+                                    id_formaspagamento,
+                                    id_contato),
                                     values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        
         $stmt = parent :: $conexao ->prepare($sql);
         $stmt->bindValue(1,$model->numeroboleto);
         $stmt->bindValue(2,$model->idcontrato);
@@ -44,13 +45,13 @@ class BoletoDao extends DAO
         $stmt->bindValue(8,$model->recebedor);
         $stmt->bindValue(9,$model->observacoes);
         $stmt->bindValue(10,$model->qrcod); 
-        $stmt->bindValue(12,$model->codigodebarra);
-        $stmt->bindValue(11,$model->id_situacaoboleto);
-        $stmt->bindValue(11,$model->id_formadepagamento);
-        $stmt->bindValue(11,$model->id_contrato);
+        $stmt->bindValue(11,$model->codigodebarra);
+        $stmt->bindValue(12,$model->id_situacaoboleto);
+        $stmt->bindValue(13,$model->id_fomaspagamento);
+        $stmt->bindValue(14,$model->id_contato);
         $stmt->execute();
 
-        $model->id = parent::$conexao->lastInsertId();
+        $model->idboletos = parent::$conexao->lastInsertId();
    
     return new Boleto;
     
@@ -58,7 +59,7 @@ class BoletoDao extends DAO
 
     public function update (Boleto $model) :Boleto
     {
-         $sql = "UPDATE boleto SET
+         $sql = "UPDATE boleto SET(
                                 numeroboleto=?,
                                 idcontrato=?,
                                 pagador=?,
@@ -69,8 +70,13 @@ class BoletoDao extends DAO
                                 recebedor=?,
                                 observacoes=?,
                                 qrcod=?,
-                                idsituacaoboleto=?,
-                                codigodebarra=? WHERE id=?";
+                                qrcod=?,
+                                codigodebarra=?,
+                                id_situacaoboleto=?,
+                                id_formaspagamento=?,
+                                id_contata=?, 
+
+                                WHERE id=?)";
         $stmt = parent :: $conexao ->prepare($sql);
         $stmt->bindValue(1,$model->numeroboleto);
         $stmt->bindValue(2,$model->idcontrato);
@@ -82,8 +88,10 @@ class BoletoDao extends DAO
         $stmt->bindValue(8,$model->recebedor);
         $stmt->bindValue(8,$model->observacoes);
         $stmt->bindValue(10,$model->qrcod);
-        $stmt->bindValue(11,$model->idsituacaoboleto);
-        $stmt->bindValue(12,$model->codigodebarra);
+        $stmt->bindValue(10,$model->codigodebarra);
+        $stmt->bindValue(11,$model->id_situacaoboleto);
+        $stmt->bindValue(11,$model->id_fomaspagamento);
+        $stmt->bindValue(11,$model->id_contato);
         $stmt->execute();
 
         return new Boleto();

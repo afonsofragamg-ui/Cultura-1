@@ -31,7 +31,6 @@ class Boleto{
         return (new Boleto());
     }
     
-
     public function getAllRows () : array
     {
         return [];
