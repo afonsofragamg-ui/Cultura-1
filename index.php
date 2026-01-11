@@ -16,10 +16,13 @@
     </head>
 
     <body class="index" onshow="logout.php()">
-        <?php require_once 'cabecalho.php';
-         require_once 'menu.php';
-         session_start();
-         session_destroy();
+        <?php 
+            include "config.php";
+            include "autoload.php";
+            include "routes.php";
+            
+            session_start();
+            session_destroy();
          ?>
         <section class="img" id="img06">
             <h2>Cultura em sua essência:</h2>

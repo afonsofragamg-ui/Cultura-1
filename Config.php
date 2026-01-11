@@ -3,8 +3,7 @@
 // 2º onde estão as views
 // 3º Acesso ao Banco de Dados
 
-echo __FILE__;
-define ('BASE_DIR',dirname(__FILE__,2));
+define ('BASE_DIR',dirname(__FILE__,1));
 define ('VIEWS',BASE_DIR .'/View');
 
 // isso aqui não é utilizado mas será aprendido mais adiante

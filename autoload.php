@@ -8,8 +8,8 @@ spl_autoload_register (function ($nome_da_classe)
  if (file_exists($arquivo)){
     include_once $arquivo;
  } else {
-    throw new Exception {
       ("arquivo não existe");
-    }      
+    } 
  }
-});
+        
+);

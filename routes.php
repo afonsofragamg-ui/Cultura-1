@@ -10,8 +10,6 @@ if ($url === '/Cultura1/APP/') {
 } elseif ($url === '/Cultura1/APP/Controller/') {
     echo "página Controller";
 } else {
-    // default case: route not found
-    http_response_code(404);
     echo "Página não encontrada";
 }
 
