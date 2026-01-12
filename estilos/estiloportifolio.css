@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import "paletadecores.css";
+@import "estilos.css";
+
+
+#secao01{
+    position: relative;
+    display: block;
+}
+#foto {
+    width: 30%;
+    height: 300px;
+    background-color: var(--dra06);
+}
+
+.dados {
+    position: relative;
+    display:flex;
+}
+.trabalhos{
+    display: flex;
+}
+
+

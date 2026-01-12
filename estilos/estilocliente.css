@@ -1,0 +1,447 @@
+@charset "UTF-8";
+
+/*configurações menucliente */
+.cliente {
+    background-color: var(--cor01);
+    color: var(--cor01);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho_cliente{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cor10);
+    color: var(--cor01);
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_cliente{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor01);
+    width: auto;
+    height: auto;
+}
+
+.fundo2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    z-index: 0;
+    display: none;
+}
+
+.main_cliente p {
+    text-align: center;
+    height: 50px;
+    font-size: 30px;
+}
+
+#menucliente{
+    background-color: var(--cor14);
+}
+
+.corpo {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: grid;
+	grid-template-columns: 50% 50%;
+	text-align: center;
+    background-color: var(--cor06);
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.principal{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    flex-direction: column;
+    background-color: var(--dra04);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    width: 55vw;
+    height: auto;
+    text-align:justify;
+    color: var(--cor02);
+    align-items: center;
+    font-size: 1vw;
+    z-index: 13;
+    display:none;
+    overflow: inherit;
+}
+
+.titulo_box{
+    display: flex;
+    text-align: center;
+    color: black;
+}
+
+.titulo{
+    margin: 10px;
+    font-style:initial;
+}
+
+.inputUser_cliente{
+    text-align: left;
+    font-size: 20px;
+    width: 80%;
+    border: none;
+    margin: 5px;
+    background-color: var(--cor06);  
+}
+
+.titulo {
+    width: 25%;
+    font-size: 20px;
+    margin-left: 10px;
+    color: var(--cor02);
+}
+
+.box{
+    position: relative;
+    display: flex;
+    margin-top: 10%;
+    margin-left: 50%;
+    margin-bottom: 10%;
+    flex-direction: column;
+    background-color: var(--dra04);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    width: 15vw;
+    height: auto;
+    text-align:justify;
+    justify-content: center;
+    color: var(--cor02);
+    align-items: center;
+    font-size: 1vw;
+    z-index: 1315;
+    display:none;
+}
+
+.box_circulo{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    flex-direction: column;
+    background-color: var(--cor01);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    width: 12vw;
+    height: auto;
+    text-align:justify;
+    color: var(--cor02);
+    align-items: center;
+    font-size: 1vw;
+    z-index: 13;
+    display:block;
+}
+
+
+circle{
+    width: 50vw; 
+    height: 50vw;
+    fill: none;
+    stroke: var(--cor02 );
+    stroke-width: 10;
+    transform: translate(10px, 5px);
+    stroke-dasharray:100;
+    stroke-dashoffset: 100;
+}
+
+circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: var(--dra04 );
+}
+
+circle:nth-child(2){
+    stroke-dashoffset: 200;
+    stroke: var(--cor15);
+}
+
+
+.numero{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: var(--cor15);
+}
+
+
+/*configurações cadastros */
+
+.cadastraDados{
+    display: flexbox;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    flex-direction: column;
+    background-color: var(--dra04);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    width: 55vw;
+    height: auto;
+    text-align:justify;
+    color: var(--cor02);
+    align-items: center;
+    font-size: 1vw;
+    z-index: 2999;
+    display:none;
+    overflow: inherit;
+}
+
+.rodape  {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    text-align: right;
+    margin-bottom: 5px; 
+}
+
+.dados, .endereco, .contato, .documento, .alterasenha{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor01);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: auto;
+    height: auto;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    text-align:justify;
+    color: var(--cor02);
+    z-index: 13;
+}
+
+.alterasenha{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor01);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    margin-top: 1vw;
+    margin-left: 12vw;
+    margin-bottom: 2vw;
+    text-align:justify;
+    justify-content: center;
+    color: var(--cor02);
+    z-index: 13;
+    display: none;
+}
+
+.coluna{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+    text-align: left;
+    margin-left: 2px;
+}
+
+.coluna1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    text-align: left;
+    margin-left: 2px;
+}
+
+#linha1, #linha2, #linha3, #linha4, #linha5 {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin-left: 5px;
+    padding: 5px;
+    display: none;
+}
+
+/* configurações de inputs*/
+
+.inputBox {
+    display: flex;
+    border:1px solid;
+    border-radius: 10px;
+    border-color: var(--dra04);
+    color: var(--cor02);
+    text-align: left;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1vw;
+}
+
+.inputBox1{
+    font-size: 150%;
+    display: flex;
+    border:1px solid;
+    border-color: var(--cor02);
+    text-align: left;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+#idnovasenha:focus, #idconfirmasenha:focus, .inputUser:focus, .inputUser1:focus, .inputUser2:focus,.inputUser3:focus {
+    background-color: var(--corhover);
+ }
+
+ .labelInput {
+    width: auto; 
+    font-size: 1vw;
+    margin-left: 30px;
+    overflow: inherit;
+    border: none;
+}
+
+.labelInput1 {
+    width: auto; 
+    font-size: 1vw;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 30px;
+    overflow: inherit;
+}
+
+ #idlabelnome, #idlabelcpf, #idlabelemail, #idlabelrg, #idlabelcep, #idlabelnumero, #idlabelcomplemento {
+    width: auto; 
+    font-size: 1vw;
+    margin-left: 30px;
+    overflow: inherit;
+    border: none;
+    display: block;
+}
+
+.labelInput2 {
+    width: 20%; 
+    font-size: 1vw;
+    margin-top: 10px;
+    text-align: right;
+    margin-left: 2%;
+    overflow: inherit;
+}
+
+.labelInput3 {
+    width: auto; 
+    font-size: 1vw;
+    text-align: left;
+    margin-left: 1%;
+    overflow: inherit;
+}
+
+.labelInput4 {
+    width: auto; 
+    font-size: 1vw;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 2%;
+    overflow: inherit;
+}
+
+.inputUser{
+    width: auto;
+    background-color: var(--cor01); 
+    border: none;
+    outline: none;
+    margin-left: 10%;
+    font-size: 1.2vw;
+    
+}
+
+#idnome, #idcpf, #idemail, #idrg, #idcep, #idnumero, #idcomplemento, #idlogradouro, #idbairro, #iduf, #idcidade, #idtelefone, #idfacebook, #idinstagran, #idtwitter, #idarqidentidade, #idarqmunicipal, #idarqestadual, #idarqfederal, #idarqfgts, #idarqtrabalhista, #idarqcomprovante, #idconfirmanovasenha, #idnovasenha {
+    width: 60%;
+    height: 50%;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding-left: 10px;
+    background-color: var(--cor01); 
+    font-size: 1vw;
+    border: none;
+    outline: none;
+    display: block;     
+}
+
+#idnome:focus, #idcpf:focus, #idemail:focus, #idrg:focus, #idcep:focus, #idnumero:focus, #idcomplemento:focus, #idtelefone:focus, #idfacebook:focus, #idinstagran:focus, #idtwitter:focus, #idarqidentidade:focus, #idarqmunicipal:focus, #idarqestadual:focus, #idarqfederal:focus, #idarqfgts:focus, #idarqtrabalhista:focus, #idarqcomprovante:focus, #idsenha:focus   {
+    background-color: var(--corhover);
+}
+
+.inputUser2{
+    width: auto;
+    height: 50%;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 10px;
+    background-color: var(--cor01); 
+    border:1px solid;
+    border-color: var(--cor16);
+    font-size: 1.2vw;
+    outline: none;
+}
+
+.inputUser3{
+    width: 150px;
+    height: 55%;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    background-color: var(--cor01); 
+    border:1px solid;
+    border-color: var(--cor16);
+    font-size: 1.2vw;
+    outline: none;
+}
+input[type="file"]{
+    display:none;
+}
+
+.inputUserimg{
+    width: auto;
+    background-color: var(--cor01); 
+    border: none;
+    outline: none;
+    margin-left: 5%;
+    margin-top: 1%;
+    font-size: 1vw;
+}
+
+.labelInputTitulo1  {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 200%;
+}
+
+/*Final configuração de span*/

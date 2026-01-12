@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+/*configurações administrador */
+.administrador {
+    background-color: var(--cor01);
+    color: var(--cor01);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho_administrador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cor10);
+    color: var(--cor01);
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_administrador{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor01);
+    width: auto;
+    height: auto;
+
+}
+#menuadministrador{
+    background-color: var(--cor14);
+}
+
+.fundo1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    z-index: 0;
+    display: none;
+}
+
+#idpainel{
+    display: none;
+}
+
+
+/*configurações modais*/
+
+/*configurações usuarios*/
+
+
+.precadastro, .usuario, .cadastraclientes, .clientes, .consultaclientes, .manutencao {
+    display: none;
+    flex-direction: column;
+    background-color: var(--cor01);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: auto;
+    height: auto;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    text-align:justify;
+    color: var(--cor02);
+    z-index: 13;
+}
+
+#idtabelausuario, #idtabelaprecadastro {
+    flex-direction: column;
+    background-color: var(--cor01);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: auto;
+    height: auto;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    text-align:justify;
+    color: var(--cor02);
+    z-index: 13;
+    display: none;
+}
+
+#ideditausuario, #idcadastra, #ideditaclientes, #idmanutencao {
+    display:none;
+    flex-direction: column;
+    background-color: var(--cor01);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: auto;
+    height: auto;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    text-align:justify;
+    color: var(--cor02);
+    z-index: 13;
+}
+
+.conteudo-modalDadosUsuario h2 {
+    color: var(--cor02);
+}
+
+/* final configurações usuarios*/
+
+
+/*final configurações modais */
+
+
+
+/*configurações tabela consultausuário*/
+
+table, th, td  {
+    border: 1px solid var(--cor02);
+    border-collapse: collapse;
+    padding: 10px 10px;
+    text-align: center;    
+    padding: 10px;
+    
+}
+
+td {
+    width: auto;
+}
+
+.tabela1 {
+    border: 1px solid var(--cor02);
+    border-collapse: collapse;
+    padding: 10px 10px;
+    text-align: center;    
+    padding: 10px;
+    width: 50%;
+}
+
+table {
+    width: 100%;
+}
+
+.col {
+    text-align: center;
+    background-color: var(--cor14);
+    color : var(--cor01);
+}
+
+tr:hover {
+    background-color: var(--corhover);
+}
+
+#idacoes{
+    width: 20%;
+}
+/*configurações edita usuário*/
+.edita_usuario {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+    background-color: var(--cor01);
+    border-radius: 10px;
+    padding: 20px;
+    width: 20vw;
+    height: auto;
+    text-align:justify;
+    color: var(--cor02);
+    align-items: center;
+    z-index: 13;
+    display: block;
+
+
+}
+
+/*configurações botoes */
+

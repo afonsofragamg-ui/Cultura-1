@@ -10,7 +10,7 @@ if ($url === '/Cultura1/APP/') {
 } elseif ($url === '/Cultura1/APP/Controller/') {
     echo "página Controller";
 } else {
-    echo "Página não encontrada";
+    echo "Páginaaaaaaaa não encontrada";
 }
 
 

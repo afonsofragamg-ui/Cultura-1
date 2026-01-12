@@ -20,9 +20,7 @@
             include "config.php";
             include "autoload.php";
             include "routes.php";
-            
-            session_start();
-            session_destroy();
+            include_once "cabecalho.php";
          ?>
         <section class="img" id="img06">
             <h2>Cultura em sua essência:</h2>
@@ -30,6 +28,8 @@
                 Tem o significado de cuidar, cultivar e crescer ou ainda pode ser um conjunto de hábitos, crenças e conhecimentos de um povo ou um determinado grupo que cultiva, de algum modo, um padrão estético semelhante.
             </p>
         </section>
-        <?php include_once 'rodape.php'?>
+        <?php
+            include_once "rodape.php";
+        ?>
     </body>
 </html>
