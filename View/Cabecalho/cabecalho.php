@@ -1,5 +1,5 @@
 <?php
-    namespace Cultura1\APP\View;
+    namespace Cultura\APP\View;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

@@ -14,14 +14,14 @@
         <link rel= "shortcut icon" href="#" type="image/x-icon">
         <title>Cadastro Cultural</title>
     </head>
-
+    <?php 
+        include "config.php";
+        include "autoload.php";
+        include "routes.php";
+        include 'config.php';
+    ?>
     <body class="index" onshow="logout.php()">
-        <?php 
-            include "config.php";
-            include "autoload.php";
-            include "routes.php";
-            include '../config.php';
-         ?>
+       
         <section class="img" id="img06">
             <h2>Cultura em sua essência:</h2>
             <p>
