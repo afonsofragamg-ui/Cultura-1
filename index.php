@@ -20,7 +20,7 @@
             include "config.php";
             include "autoload.php";
             include "routes.php";
-            include_once "cabecalho.php";
+            include '../config.php';
          ?>
         <section class="img" id="img06">
             <h2>Cultura em sua essência:</h2>
