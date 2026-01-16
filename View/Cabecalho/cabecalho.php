@@ -1,5 +1,7 @@
 <?php
     namespace Cultura\APP\View;
+    use Cultura\APP\View\cabecalho;
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -14,7 +16,7 @@
 
 <body>
     <header class="cabecalho" id="idcabecalho">
-        <img class="imagem_site" src="imagens/ArtCult.png" alt="Logo">
+        <img class="imagem_site" src="/imagens/ArtCult.png" alt="Logo">
     </header>
 </body>
 </html>

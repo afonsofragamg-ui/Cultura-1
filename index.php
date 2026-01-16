@@ -18,7 +18,9 @@
         include "config.php";
         include "autoload.php";
         include "routes.php";
-        include 'config.php';
+        include VIEWS.'\cabecalho\cabecalho.php';
+        include VIEWS.'\menu\menu.php';
+
     ?>
     <body class="index" onshow="logout.php()">
        
@@ -28,8 +30,11 @@
                 Tem o significado de cuidar, cultivar e crescer ou ainda pode ser um conjunto de hábitos, crenças e conhecimentos de um povo ou um determinado grupo que cultiva, de algum modo, um padrão estético semelhante.
             </p>
         </section>
-        <?php
-            include_once "rodape.php";
-        ?>
+
     </body>
+
+    <?php 
+        include VIEWS. '\rodape\rodape.php';
+    ?>
+    
 </html>

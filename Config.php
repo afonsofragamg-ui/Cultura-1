@@ -5,6 +5,7 @@
 
 define ('BASE_DIR',dirname(__FILE__,1));
 define ('VIEWS',BASE_DIR .'/View');
+//define ('VIEWS_menu',BASE_DIR .'/View/menu');
 
 // isso aqui não é utilizado mas será aprendido mais adiante
 $_ENV ['db']['host'] = "localhost:3306";
