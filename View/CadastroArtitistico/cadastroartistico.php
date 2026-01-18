@@ -13,7 +13,7 @@
      <?php 
         define ('BASE_DIR',dirname(__FILE__,2));
         include VIEWS .'\cabecalho\cabecalho.php';
-        include VIEWS .'\menu\menu.php';
+        include VIEWS .'.\menu\menu.php';
 
     ?>
     <div class="normal">

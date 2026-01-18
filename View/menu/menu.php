@@ -17,8 +17,8 @@
                     <li> <a href="#" target=_self rel="noopener noreferrer">Serviços</a>
                         <ul>
                             <li><a href="/View/CadastroArtitistico/cadastroartistico.php" target=_self rel="noopener noreferrer">Cadastro Artístio</a></li>
-                            <li><a href="acompanhamentodeprojetos.php" target=_self rel="noopener noreferrer">Acompanhamento de Projetos</a></li>
-                            <li><a href="formatacaodeprojeto.php" target=_self rel="noopener noreferrer">Formatação de Projetos </a></li>
+                            <li><a href="/View/Acomapanhamentodeprojetos/acompanhamentodeprojetos.php" target=_self rel="noopener noreferrer">Acompanhamento de Projetos</a></li>
+                            <li><a href="/View/Formatacaodeprojeto/formatacaodeprojeto.php" target=_self rel="noopener noreferrer">Formatação de Projetos </a></li>
                         </ul>
                         <li><a href="login.php" target=_self rel="noopener noreferrer">Acesso</a>
                         <li><a href="contato.php" target=_self rel="noopener noreferrer">Contato</a></li>
