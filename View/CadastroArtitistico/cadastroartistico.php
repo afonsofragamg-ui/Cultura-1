@@ -11,9 +11,10 @@
 
 <body>
      <?php 
-        define ('BASE_DIR',dirname(__FILE__,2));
+        define ('BASE_DIR',dirname(__FILE__,3));
+        define ('VIEWS',BASE_DIR .'/View');
         include VIEWS .'\cabecalho\cabecalho.php';
-        include VIEWS .'.\menu\menu.php';
+        include VIEWS .'\menu\menu.php';
 
     ?>
     <div class="normal">
@@ -31,7 +32,7 @@
         </section>
     <br>
     <?php 
-        include BASE_DIR. '\rodape\rodape.php'; 
+        include VIEWS .'\rodape\rodape.php'; 
     ?>
 </body>
 </html>

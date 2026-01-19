@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatação de projetos Culturais</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="/estilos/estilos.css">
 </head>
 
 <body>
-    <?php require_once 'cabecalho.php' ?>
-    <?php require_once 'menu.php' ?>
+    <?php 
+        define ('BASE_DIR',dirname(__FILE__,3));
+        define ('VIEWS',BASE_DIR .'/View');
+        include VIEWS .'\cabecalho\cabecalho.php';
+        include VIEWS .'\menu\menu.php';
+    ?>
     <section class="normal">
         <p>
             Uma ideia bem planejada gera um projeto bem estruturado. Mas, são muitas as variáveis entre o começo, a ideia, e o fim do projeto executado. Para a realização de um projeto cultural, a descrição, o cronograma e a definição de como o projeto será realizado se tornam itens fundamentais.
@@ -33,6 +37,8 @@
             No entanto, a organização de uma equipe bem formada, objetivos que não podem ser alcançados, atividades que não foram bem organizadas são alguns exemplos de percalços que a formatação de projeto cultural também deve prever. A empresa “Projetos e O cliente será guiado até a concretização da ideia inicial até a formatação de projeto cultural.
         </p>
     </section>
-    <?php require_once 'rodape.php' ?>
+    <?php 
+        include VIEWS .'\rodape\rodape.php';
+    ?>
 </body>
-</html>
+</html

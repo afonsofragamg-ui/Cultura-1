@@ -17,12 +17,12 @@
                     <li> <a href="#" target=_self rel="noopener noreferrer">Serviços</a>
                         <ul>
                             <li><a href="/View/CadastroArtitistico/cadastroartistico.php" target=_self rel="noopener noreferrer">Cadastro Artístio</a></li>
-                            <li><a href="/View/Acomapanhamentodeprojetos/acompanhamentodeprojetos.php" target=_self rel="noopener noreferrer">Acompanhamento de Projetos</a></li>
-                            <li><a href="/View/Formatacaodeprojeto/formatacaodeprojeto.php" target=_self rel="noopener noreferrer">Formatação de Projetos </a></li>
+                            <li><a href="/View/Acompanhamentodeprojetos/acompanhamentodeprojetos.php" target=_self rel="noopener noreferrer">Acompanhamento de Projetos</a></li>
+                            <li><a href="/View/Formatacaodeprojetos/formatacaodeprojeto.php" target=_self rel="noopener noreferrer">Formatação de Projetos </a></li>
                         </ul>
-                        <li><a href="login.php" target=_self rel="noopener noreferrer">Acesso</a>
-                        <li><a href="contato.php" target=_self rel="noopener noreferrer">Contato</a></li>
-                        <li><a href="precadastrousuario.php" target=_self rel="noopener noreferrer">Torne-se Cliente</a></li>
+                        <li><a href="/View/Login/login.php" target=_self rel="noopener noreferrer">Acesso</a>
+                        <li><a href="/View/Contato/contato.php" target=_self rel="noopener noreferrer">Contato</a></li>
+                        <li><a href="/View/Precadastro/precadastrousuario.php" target=_self rel="noopener noreferrer">Torne-se Cliente</a></li>
                 </ul>
             </nav>
         </div>
