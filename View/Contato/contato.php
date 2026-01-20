@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilos.css">
-    <link rel="stylesheet" href="estilos/paletadecores.css">
-    <link rel="stylesheet" href="estilos/estiloformularios.css">
-    <link rel="stylesheet" href="estilos/estilojanelasmodal.css">
+    <link rel="stylesheet" href="/estilos/estilos.css">
+    <link rel="stylesheet" href="/estilos/paletadecores.css">
+    <link rel="stylesheet" href="/estilos/estiloformularios.css">
+    <link rel="stylesheet" href="/estilos/estilojanelasmodal.css">
     <script src="funcoes/funcao.js" defer></script>
     <title>Contato</title>
 </head>
 
 <body>
-    <?php require_once 'cabecalho.php' ?>
-    <?php require_once 'menu.php'?>
-    <?php
-                $limpadados = [
-                  'nome' => "",
-                  'email' => null,
-                  'textarea' => null,
-                ];
+    
 
-         ?>
+    <?php
+        define ('BASE_DIR',dirname(__FILE__,3));
+        define ('VIEWS',BASE_DIR .'/View');
+        include VIEWS .'\cabecalho\cabecalho.php';
+        include VIEWS .'\menu\menu.php';
+        $limpadados = [
+            'nome' => "",
+            'email' => null,
+            'textarea' => null,
+        ];
+    ?>
        <div class="contato">
-            <form action="processacontato.php" method="post" autocomplete="no">
+            <form action="#" method="post" autocomplete="no">
                 <label form="login" class="labelInputTitulo1">Contato</label>
                 <br>
                 <div class="inputBox">
@@ -57,7 +60,9 @@
             </form>
 
         </div>
-    <?php require_once 'rodape.php' ?>
+    <?php 
+        include VIEWS .'\rodape\rodape.php'; 
+    ?>
     <script>
          document.getElementById("idnome").focus();
     </script>

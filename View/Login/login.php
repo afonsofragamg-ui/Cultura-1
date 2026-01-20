@@ -18,6 +18,7 @@
         define ('VIEWS',BASE_DIR .'/View');
         include VIEWS .'\cabecalho\cabecalho.php';
         include VIEWS .'\menu\menu.php';
+        include VIEWS .'\rodape\rodape.php';
     ?>
     
         <div class="login" id="idlogin">
