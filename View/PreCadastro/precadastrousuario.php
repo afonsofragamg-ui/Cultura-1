@@ -13,47 +13,17 @@
    <script src="funcoes/funcaovalidadados.js" defer> </script>
 
 <body>
-    <?php 
-        define ('BASE_DIR',dirname(__FILE__,3));
-        define ('VIEWS',BASE_DIR .'/View');
-        include VIEWS .'\cabecalho\cabecalho.php';
-        include VIEWS .'\menu\menu.php';
-    ?>
-      <div class= "container">
-         <div class= "tornesecliente">
-            <label form="login" class="labelInputTitulo">Torne-se Ciente</label>
-            <section class="normal">
-            <p>
-                  Ao tornar-se cliente do nosso site você terá acesso a todos os serviços
-                  disponíveis.
-                  Preencha os dados do formulário que entraremos em contado com você.
-            </p>
-            </section>
-         </div>
-         
-      <div class="precadastrousuario">
-         <?php
-                $limpadados = [
-                  'nome' => "",
-                  'cpf' => null,
-                  'email' => null,
-                  'telefone' => null,
-                  'cep' => null,
-                  'logradouro' => null,
-                  'numero' => null,
-                  'bairro' => null,
-                  'complemento' => null,
-                  'municipio' => null,
-                  'uf' => null,
-                  'modalidade' => null,
-                  'valormensalidade' => null
-                ];
-         ?>
-
+   <?php 
+      define ('BASE_DIR',dirname(__FILE__,3));
+      define ('VIEWS',BASE_DIR .'/View');
+      include VIEWS .'\cabecalho\cabecalho.php';
+      include VIEWS .'\menu\menu.php';  
+      include VIEWS .'\rodape\rodape.php';
+   ?>
          <form action="processaprecadastroaaa.php" method="post">
             <div class="inputBoxcabecalho">
-            <label class="labelInputTitulo">Solicite seu Pré-Cadastro</label>
-            <br>
+               <label class="labelInputTitulo">Solicite seu Pré-Cadastro</label>
+               <br>
             </div>
             <span class="span" id="idspanNome">Campo Obrigatório</span>
             <div class="inputBox">
@@ -77,11 +47,12 @@
                </div>
             </div>
 
-               <span id="idspanEmail">Campo obrigatório</span>
-               <div class="inputBox">
-                  <label class="labelInput">Email</label>
-                  <input value="<?= $limpadados['email']?>" type="text" name="email" id="idemail" class="inputUser" placeholder="Digite seu E-mail">
-               </div>
+            <span id="idspanEmail">Campo obrigatório</span>
+            <div class="inputBox">
+               <label class="labelInput">Email</label>
+               <input value="<?= $limpadados['email']?>" type="text" name="email" id="idemail" class="inputUser" placeholder="Digite seu E-mail">
+            </div>
+
             <div class="trescolunas" id="idtrescolunas">
                <span class="span" id="idspanCep">CEP inválido</span>
                <div class="inputBox">
@@ -100,10 +71,11 @@
                </div>
             </div>
 
-               <div class="duascolunasSpan" id="idduascolunasSpan">
-                  <span class="span" id="idspanNumero"></span>
-                  <span class="span" id="idspanNumero1">Campo obrigatório</span>
-               </div>
+            <div class="duascolunasSpan" id="idduascolunasSpan">
+               <span class="span" id="idspanNumero"></span>
+               <span class="span" id="idspanNumero1">Campo obrigatório</span>
+            </div>
+
             <div class="endereço" id="idendereco">
                <div class="inputBox">
                   <label class="labelInput">Rua</label>
@@ -147,11 +119,11 @@
             <div class="inputBoxRodape">
                   <input type="submit" name="submit" id="idsubmit" value="Enviar" onclick="">
                   <input type="reset" name="reset" id="idreset" value="Limpar" onclick="javascript: location.href='precadastrousuario.php'">
-            </div>
+            </div> 
          </form>
-         
-      </div>
-   
+
+      
 </body>
+
 </html>
 
