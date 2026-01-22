@@ -18,7 +18,22 @@
       define ('VIEWS',BASE_DIR .'/View');
       include VIEWS .'\cabecalho\cabecalho.php';
       include VIEWS .'\menu\menu.php';  
-      include VIEWS .'\rodape\rodape.php';
+      
+      $limpadados = [
+            'nome' => "",
+            'cpf' => null,
+            'telefone' => null,
+            'email' => null,
+            'cep' => null,
+            'numero' => null,
+            'complemento' => null,
+            'logradouro' => null,
+            'bairro' => null,
+            'municipio' => null,
+            'uf' => null,
+            'modalidade' => null,
+
+        ];
    ?>
          <form action="processaprecadastroaaa.php" method="post">
             <div class="inputBoxcabecalho">
@@ -67,7 +82,7 @@
 
                <div class="inputBox">
                   <label  class="labelInput">Complemento</label>
-                  <input value="<?= $limpadados['numero']?>" type="text" name="complemento" id="idcomplemento" class="inputUser" placeholder="xxxxx">
+                  <input value="<?= $limpadados['complemento']?>" type="text" name="complemento" id="idcomplemento" class="inputUser" placeholder="xxxxx">
                </div>
             </div>
 
@@ -122,7 +137,9 @@
             </div> 
          </form>
 
-      
+    <?php 
+        include VIEWS. '\rodape\rodape.php';
+    ?>
 </body>
 
 </html>
