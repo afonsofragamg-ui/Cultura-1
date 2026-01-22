@@ -3,10 +3,6 @@ namespace Cultura\APP\DAO;
 
 use Cultura\APP\Model\Documento;
 class DocumentoDAO{
-    public function save (Documento $model) :Documento
-    {
-        return ($model->id == null) ? $this-> insert($model) : $this->update($model);
-    }
 
     public function insert (Documento $model) :Documento
     {

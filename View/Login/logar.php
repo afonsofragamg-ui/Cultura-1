@@ -5,8 +5,9 @@
   
   if (isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) && !empty($_POST['senha'])){
 
-    require_once 'conectabanco.php';
-    require_once 'Usuario.class.php';
+        define ('BASE_DIR',dirname(__FILE__,3));
+        include BASE_DIR . '\DAO\dao.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
