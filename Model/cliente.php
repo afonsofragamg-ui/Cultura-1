@@ -1,7 +1,7 @@
 <?php
 
-namespace Cultura\APP\Model;
-use Cultura\APP\DAO\ClienteDAO;
+namespace Cultura\Model;
+use Cultura\DAO\ClienteDAO;
 class Cliente{
     
     public $idclientes;

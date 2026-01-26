@@ -1,7 +1,7 @@
 <?php
 
-namespace Cultura\APP\Controller;
-use Cultura\APP\Model\PreCadastro;
+namespace Cultura\Controller;
+use Cultura\Model\PreCadastro;
 
 class PrecadastroController{
 

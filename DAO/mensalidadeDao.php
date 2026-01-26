@@ -1,8 +1,8 @@
 <?php
 
-namespace Cultura\APP\DAO;
+namespace Cultura\DAO;
 
-use Cultura\APP\Model\Mensalidade;
+use Cultura\Model\Mensalidade;
 class MensalidadeDao{
 
     public function save (Mensalidade $model) : Mensalidade

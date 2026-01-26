@@ -1,8 +1,8 @@
 <?php
 
 
-namespace Cultura\APP\Controller;
-use Cultura\APP\Model\Mensalidade;
+namespace Cultura\Controller;
+use Cultura\Model\Mensalidade;
 
 
 class MensalidadeController{

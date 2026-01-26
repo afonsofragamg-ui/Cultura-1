@@ -1,5 +1,6 @@
 <?php
-namespace Cultura\APP\Model;
+namespace Cultura\Model;
+use Cultura\DAO;
 class NivelAcesso{
     private $id;
     private $nivel;

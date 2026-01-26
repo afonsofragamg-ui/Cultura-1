@@ -3,8 +3,8 @@
  * Declaração de namespaces com sub-namespaces:
  * https://www.php.net/manual/pt_BR/language.namespaces.nested.php
  */
-namespace Cultura\APP\Controller;
-use Cultura\APP\Model\Boleto;
+namespace Cultura\Controller;
+use Cultura\Model\Boleto;
 
 /**
  * Declaração de membros de classes estaticos

@@ -1,7 +1,7 @@
 <?php
 
-namespace Cultura\APP\Controller;
-use Cultura\APP\Model\Cliente;
+namespace Cultura\Controller;
+use Cultura\Model\Cliente;
 
 class ClienteController{
 

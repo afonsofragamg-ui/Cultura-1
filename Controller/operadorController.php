@@ -1,7 +1,7 @@
 <?php
 
-namespace Cultura\APP\Controller;
-use Cultura\APP\Model\Operador;
+namespace Cultura\Controller;
+use Cultura\Model\Operador;
 
 
 class OperadorController{

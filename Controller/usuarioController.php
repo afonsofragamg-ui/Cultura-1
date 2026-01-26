@@ -1,7 +1,7 @@
 <?php
 
-namespace Cultura\APP\Controller;
-use Cultura\APP\Model\Usuario;
+namespace Cultura\Controller;
+use Cultura\Model\Usuario;
 
 class UsuarioController{
 

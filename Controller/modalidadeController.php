@@ -1,7 +1,7 @@
 <?php
 
-namespace Cultura\APP\Controller;
-use Cultura\APP\Model\Modalidade;
+namespace Cultura\Controller;
+use Cultura\Model\Modalidade;
 
 
 class ModalidadeController{

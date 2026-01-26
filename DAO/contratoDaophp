@@ -1,8 +1,8 @@
 <?php
 
-namespace Cultura\APP\DAO;
+namespace Cultura\DAO;
 
-use Cultura\APP\Model\Contrato;
+use Cultura\Model\Contrato;
 
 class ContratoDAO extends DAO{
 

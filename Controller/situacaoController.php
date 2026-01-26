@@ -1,7 +1,7 @@
 <?php
 
-namespace Cultura\APP\Controller;
-use Cultura\APP\Model\Situacao;
+namespace Cultura\Controller;
+use Cultura\Model\Situacao;
 
 class SituacaoController{
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Cultura\APP\DAO;
+namespace Cultura\DAO;
 
-use Cultura\APP\Model\Cliente;
+use Cultura\Model\Cliente;
 class ClienteDao extends DAO {              
 
     public function save (Cliente $model) : Cliente

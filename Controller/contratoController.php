@@ -1,7 +1,7 @@
 <?php
 
-namespace Cultura\APP\Controller;
-use Cultura\APP\Model\Contrato;
+namespace Cultura\Controller;
+use Cultura\Model\Contrato;
 
 
 class ContratoController{

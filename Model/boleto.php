@@ -1,7 +1,7 @@
 <?php
 
-namespace Cultura\APP\Model;
-use Cultura\APP\DAO\BoletoDao;
+namespace Cultura\Model;
+use Cultura\DAO\BoletoDao;
 
 class Boleto{
 

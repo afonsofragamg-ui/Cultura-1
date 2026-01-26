@@ -1,8 +1,8 @@
 <?php
 
-namespace Cultura\APP\DAO;
+namespace Cultura\DAO;
 
-use Cultura\APP\Model\Contato;
+use Cultura\Model\Contato;
 class ContatoDAO extends DAO{
 
      public function __construct()

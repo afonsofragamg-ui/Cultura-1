@@ -1,6 +1,6 @@
 <?php
-namespace Cultura\APP\Model;
-use Cultura\APP\DAO\ContratoDAO;
+namespace Cultura\Model;
+use Cultura\DAO\ContratoDAO;
 class Contrato{
     public $idcontrato;
     public $datainicio;

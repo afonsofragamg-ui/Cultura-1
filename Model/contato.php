@@ -1,6 +1,6 @@
 <?php
-namespace Cultura\APP\Model;
-use Cultura\APP\DAO\ContatoDAO;
+namespace Cultura\Model;
+use Cultura\DAO\ContatoDAO;
 class Contato{
     public $idcontato;
     public $nome;

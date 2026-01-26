@@ -1,7 +1,7 @@
 <?php
 
-namespace Cultura\APP\Controller;
-use Cultura\APP\Model\FormaPagamento;
+namespace Cultura\Controller;
+use Cultura\Model\FormaPagamento;
 
 
 class FormaPagamentoController{

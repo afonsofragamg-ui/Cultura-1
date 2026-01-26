@@ -1,8 +1,8 @@
 <?php
 
 
-namespace Cultura\APP\Controller;
-use Cultura\APP\Model\Portifolio;
+namespace Cultura\Controller;
+use Cultura\Model\Portifolio;
 
 
 class PortifolioController{

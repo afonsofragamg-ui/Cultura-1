@@ -1,7 +1,7 @@
 <?php
-namespace Cultura\APP\DAO;
+namespace Cultura\DAO;
 
-use Cultura\APP\Model\Documento;
+use Cultura\Model\Documento;
 class DocumentoDAO{
 
     public function insert (Documento $model) :Documento

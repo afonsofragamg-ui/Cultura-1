@@ -1,7 +1,7 @@
 <?php
 
-namespace Cultura\APP\Controller;
-use Cultura\APP\Model\NivelAcesso;
+namespace Cultura\Controller;
+use Cultura\Model\NivelAcesso;
 
 
 class NivelAcessoController{

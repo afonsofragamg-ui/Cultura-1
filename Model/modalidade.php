@@ -1,6 +1,6 @@
 <?php
-namespace Cultura\APP\Model;
-use Cultura\APP\DAO\;
+namespace Cultura\Model;
+use Cultura\DAO\MensalidadeDao;
 
 class Modalidade{
     private $id;

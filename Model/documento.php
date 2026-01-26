@@ -1,6 +1,6 @@
 <?php
-namespace Cultura\APP\Model;
-use Cultura\APP\DAO\DocumentoDAO;
+namespace Cultura\Model;
+use Cultura\DAO\DocumentoDAO;
 
 class Documento {
     private $iddocumento;

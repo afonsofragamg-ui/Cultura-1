@@ -1,8 +1,8 @@
 <?php
 
-namespace Cultura\APP\DAO;
+namespace Cultura\DAO;
 
-use Cultura\APP\Model\FormaPagamento;
+use Cultura\Model\FormaPagamento;
 class FormaPagamentoDAO{
 
     public function save (FormaPagamento $model) : FormaPagamento

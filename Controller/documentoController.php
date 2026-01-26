@@ -1,7 +1,7 @@
 <?php
 
-namespace Cultura\APP\Controller;
-use Cultura\APP\Model\Documento;
+namespace Cultura\Controller;
+use Cultura\Model\Documento;
 
 
 class DocumentoController {
