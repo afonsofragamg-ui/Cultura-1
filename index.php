@@ -20,7 +20,8 @@
         include "routes.php";
         include VIEWS.'\cabecalho\cabecalho.php';
         include VIEWS.'\menu\menu.php';
-
+        $apiCEP = file_get_contents("https://brasilapi.com.br/api/cep/v2/{cep}");
+        echo $apiCEP;
     ?>
     <body class="index" onshow="logout.php()">
        
