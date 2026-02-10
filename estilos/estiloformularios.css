@@ -1,6 +1,21 @@
 @charset "UTF-8";
-
-/*configurações gerais div */
+/* configurações form*/
+.divpainel{
+    text-align: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--cor01);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--cor02);
+    font-size: 1.2vw;
+    display: block
+}
 
 .container {
     display: grid;
@@ -72,23 +87,6 @@
     border-radius: 5px;
 }
 
-.precadastrousuario {
-    text-align: left;
-    justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 35vw;
-    height: auto;
-    margin:auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: var(--cor01);
-    border-radius: 10px;
-    padding: 40px;
-    padding-top: 10px;
-    color: var(--cor02);
-    font-size: .8vw;
- }
-
  .contato{
     border:1px solid;
     width: 30vw;
@@ -104,45 +102,6 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-#idduascolunas {
-    width: 100%;
-    min-height: 10vh;
-    height: auto;
-    display: grid;
-    margin:auto;
-	grid-template-columns: 50% 50%;
-	text-align: center;
-    background-color: var(--cor01);
-    justify-content: space-around;
-    border-radius: 10px;
-}
-
-#idtrescolunas {
-    width: 100%;
-    min-height: 10vh;
-    height: auto;
-    display: grid;
-    margin:auto;
-	grid-template-columns: 32% 32% 32%;
-	text-align: center;
-    background-color: var(--cor01);
-    justify-content: space-around;
-    border-radius: 10px;
-}
-
-
-
-#idduascolunasSpan {
-    width: 99%;
-    height: auto;
-    display: grid;
-    margin:auto;
-	grid-template-columns: 50% 50%;
-	text-align: left;
-    background-color: var(--cor01);
-    justify-content: space-around;
-    border-radius: 10px;
-}
 /*final configurações gerais div*/
 
 
@@ -194,8 +153,7 @@ select :before {
 #idsubmit, #idacesso :enabled, #idreset, #idsair, #idsairesqueceusenha {
     background-image: linear-gradient(to right,var(--cor10),var(--cor09));
     width: 20%;
-    margin-inline: 50px;
-    margin-bottom: 10px;
+    height: 90%;
     border: none;
     padding: 5px;
     color:var(--cor01);
@@ -248,6 +206,7 @@ select :before {
 span{
     display: none;
     color:var(--cor11);
+    margin: 10px;
 }
 /*Final configuração de span*/
 
@@ -270,18 +229,16 @@ span{
     font-size: 0.9vw;
     border: none;
     outline: none;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    margin-top: 2px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding-left: 5px;
     height: 30px;
     width: 90%;
+    background-color: var(--cor06);
  }
 
- #idmodalidade{
-    
- }
-
+ 
  #iddatavencimento, #iddatacadastro{
     width: 30%;
     margin-top: 10px;
@@ -327,6 +284,40 @@ span{
 
 
 /*configurações inputbox*/
+
+.inputBoxpainel{
+    display: flex;
+    width: 100%;
+}
+
+#inputBoxnome{
+    display: flexbox;
+    width: 85%;
+    justify-content: center;
+}
+
+#inputBoxemail{
+    width: 85%;
+}
+
+#inputBoxrua{
+    width: 70%;
+}
+
+#inputBoxbairro, #inputBoxmunicipio{
+    width: 50%;
+}
+
+#inputBoxComplemento{
+    width: 80%;
+}
+
+#inputBoxModalidade{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
 .inputBox {
     display: flex;
     border:1px solid;
@@ -353,8 +344,10 @@ span{
     display: block;
     text-align: center;
     justify-content: center;
+    text-align: center;
     margin-top: 35px;
     width: 100%;
+    height: 30%;
 }
 
 .login .inputBoxesqueceu {
@@ -370,6 +363,9 @@ span{
 /*Final configurações inputbox*/
 
 /*configurações labelInput*/
+.labelInput{
+    margin: 5px;
+}
 .labelInputTitulo1, .labelInputTitulo2 .labelInputTitulo3 .labelInputTitulo4  {
     display: flex;
     justify-content: left;

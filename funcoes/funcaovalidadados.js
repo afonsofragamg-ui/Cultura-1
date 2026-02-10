@@ -16,12 +16,31 @@ const ufInput = document.getElementById('iduf')
 const modalidadeInput = document.getElementById('idmodalidade')
 const message = document.getElementById('idmenssage')
 const enviar = document.getElementById('idsubmit')
+const resete = document.getElementById('idreset')
+
+
+// função enter para pular para proximo campo
+  document.addEventListener('keydown', function(event) {
+  // Verifica se a tecla pressionada foi Enter (código 13)
+  if (event.key === 'Enter') {
+        const campos = document.querySelectorAll('.campo');
+        const index = Array.from(campos).indexOf(event.target);
+        
+        // Se o campo atual for um dos campos da lista
+        if (index > -1 && index < campos.length - 1) {
+            event.preventDefault(); // Impede o envio do form
+            campos[index + 1].focus(); // Move o foco para o próximo
+        }
+  }
+});
+
 
 // valida nome 
 nomeInput.addEventListener('blur', () => {
   if (nomeInput.value === ""){
     document.getElementById("idspanNome").style.display = 'block';
     nomeInput.focus ();
+    
   } else {
       document.getElementById("idspanNome").style.display = 'none';
     }
@@ -97,7 +116,18 @@ emailInput.addEventListener('blur', () => {
   if (emailInput.value ==""){
     document.getElementById("idspanEmail").style.display = 'block'
     emailInput.focus ()
-  } else { document.getElementById("idspanEmail").style.display = 'none'
+  } 
+  else { 
+    let valida = '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    return valida.textContent
+    if (!emailInput.checkvalidity()){
+      idspanEmail.innerhtml == "email inválido"
+      document.getElementById("idspanEmail").style.display = 'block'
+      emailInput.focus ()
+    }
+    else{
+        document.getElementById("idspanEmail").style.display = 'none'
+    }
   }
 })
 

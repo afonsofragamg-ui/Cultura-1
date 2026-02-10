@@ -5,6 +5,13 @@
 
 define ('BASE_DIR',dirname(__FILE__,1));
 define ('VIEWS',BASE_DIR .'/View');
+define ('DAOS',BASE_DIR .'/DAO');
+define ('CONTROLLERS',BASE_DIR .'/Controller');
+define ('ESTILOS',BASE_DIR .'/estilos');
+define ('FUNCOES',BASE_DIR .'/funcoes');
+define ('IMAGENS',BASE_DIR .'/imagens');
+define ('MODELS',BASE_DIR .'Model/');
+
 //define ('VIEWS_menu',BASE_DIR .'/View/menu');
 
 // isso aqui não é utilizado mas será aprendido mais adiante
